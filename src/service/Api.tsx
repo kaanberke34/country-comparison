@@ -5,7 +5,7 @@ const Api = {
   get: async () => {
     try {
       const response = await axios.get<Countries[]>(
-        "https://restcountries.com/v2/all?fields=name,region,area",
+        "https://restcountries.com/v2/all?fields=name,region,area,independent",
         {
           headers: {
             Accept: "application/json",
