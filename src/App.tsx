@@ -81,6 +81,12 @@ function App() {
   const handleClear = () => {
     getCountries();
     setOrder("ASC");
+    setSelections({
+      Country: "",
+      Region: "",
+      Area: "",
+      Independent: "",
+    });
   };
   console.log(dataSource);
   console.log(selections);
