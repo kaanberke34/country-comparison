@@ -1,5 +1,4 @@
 import { Card } from "react-daisyui";
-import AppButton from "./AppButton";
 
 interface IAppCardProps {
   onClick?: () => void;

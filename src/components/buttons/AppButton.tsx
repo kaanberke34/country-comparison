@@ -15,10 +15,11 @@ interface IAppButtonProps {
     | "warning"
     | "error"
     | undefined;
+  disable?: boolean;
 }
 
 export default function AppButton(props: IAppButtonProps) {
-  const { text, id, className, color, onClick } = props;
+  const { text, id, className, color, onClick, disable } = props;
   return (
     <Button
       style={{ margin: "10px", padding: "10px" }}
@@ -26,6 +27,7 @@ export default function AppButton(props: IAppButtonProps) {
       onClick={onClick}
       id={id}
       color={color}
+      disabled={disable}
     >
       {text}
     </Button>
@@ -37,4 +39,5 @@ AppButton.defaultProps = {
   id: 0,
   className: "",
   color: "ghost",
+  disable: false,
 };
