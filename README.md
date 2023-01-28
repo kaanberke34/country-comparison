@@ -6,7 +6,7 @@ On this project DaisyUI used as a component library
 ```bash
   npm install 
 ```
-# Scripts
+## Scripts
 ```bash
   npm run dev
 ```
