@@ -1,10 +1,11 @@
 
 # Country Comparison Assignment with React + TS + Vite
 On this project DaisyUI used as a component library
+
 ## Installation
 
 ```bash
-  npm install 
+  npm install && npx tailwindcss -i ./src/index.css -o ./dist/output.css
 ```
 ## Scripts
 ```bash
